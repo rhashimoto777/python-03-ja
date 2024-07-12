@@ -152,40 +152,30 @@ def f4(db):
         主なスキル: データのマージ、集計、比較分析
     """
     # 解1
-    query = '''
-    SELECT SupplierName, AVG(Price)
-    FROM Products
-    JOIN Suppliers ON Products.SupplierID = Suppliers.SupplierID
-    GROUP BY SupplierName
-    ORDER BY AVG(Price) DESC
+    # query = '''
+    # SELECT SupplierName, AVG(Price)
+    # FROM Products
+    # JOIN Suppliers ON Products.SupplierID = Suppliers.SupplierID
+    # GROUP BY SupplierName
+    # ORDER BY AVG(Price) DESC
 
-    '''
-    results = db.execute(query)
-    results = results.fetchall()
+    # '''
+    # results = db.execute(query)
+    # results = results.fetchall()
 
-    print("\n\n=================== 4. サプライヤーの商品価格の比較 ===================")
-    for elem in results:
-        print(f'{elem[0].ljust(45)}{elem[1]:.2f}')
+    # print("\n\n=================== 4. サプライヤーの商品価格の比較 ===================")
+    # for elem in results:
+    #     print(f'{elem[0].ljust(45)}{elem[1]:.2f}')
 
     # 解2
-    # query_products = '''
-    # SELECT ProductName, SupplierID, Unit, Price
-    # FROM Products
-    # '''
-    # df_products = pd.read_sql_query(query_products, db)
+    df_products = pd.read_sql_query("SELECT * FROM Products", db)
+    df_suppliers = pd.read_sql_query("SELECT * FROM Suppliers", db)
+    df_merged = df_products.merge(df_suppliers, on='SupplierID')
 
-    # query_suppliers = '''
-    # SELECT SupplierID, SupplierName
-    # FROM Suppliers
-    # '''
-    # df_suppliers = pd.read_sql_query(query_suppliers, db)
+    average_price_per_supplier = df_merged.groupby('SupplierName')['Price'].mean().sort_values(ascending=False)
 
-    # df_merged = pd.merge(df_products, df_suppliers, on='SupplierID')
-    # average_price_per_supplier = df_merged.groupby('SupplierName')['Price'].mean()
-    # average_price_per_supplier = average_price_per_supplier.sort_values(ascending=False)
-
-    # print("\n\n=================== 3. 注文の間隔に関するインサイト ===================")
-    # print(average_price_per_supplier)
+    print("\n\n=================== 3. 注文の間隔に関するインサイト ===================")
+    print(average_price_per_supplier)
 
 def f5(db):
     """
