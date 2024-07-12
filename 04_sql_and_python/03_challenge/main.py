@@ -139,14 +139,6 @@ def f3(db):
     print(f'\n注文の日付に関する基本統計量 : ')
     print(order_date_stats)
 
-    # # 注文の日付に関する基本統計量を計算します
-    # order_date_stats = df_orders['OrderDate'].describe(datetime_is_numeric=True)
-
-    # # 結果を表示します
-    # print("注文の日付に関する基本統計量:")
-    # print(order_date_stats)
-    # print(f'\n注文の間隔の平均: {mean_interval:.2f}日')
-
 def f4(db):
     """
     4. サプライヤーの商品価格の比較
