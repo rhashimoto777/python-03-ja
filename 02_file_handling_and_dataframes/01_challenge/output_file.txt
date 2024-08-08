@@ -1,0 +1,50 @@
+Alice_in_Wonderland_Lewis_Carroll.txt
+"-------"
+Alice was beginning to get very tired of sitting by her sister on the bank, and of having nothing to do: once or twice she had peeped into the book her sister was reading.
+
+
+Dracula_Bram_Stoker.txt
+"-------"
+3 May. Bistritz.—Left Munich at 8:35 P.M., on 1st May, arriving at Vienna early next morning; should have arrived at 6:46, but train was an hour late.
+
+
+Frankenstein_Mary_Shelley.txt
+"-------"
+You will rejoice to hear that no disaster has accompanied the commencement of an enterprise which you have regarded with such evil forebodings.
+
+
+Great_Expectations_Charles_Dickens.txt
+"-------"
+My father's family name being Pirrip, and my Christian name Philip, my infant tongue could make of both names nothing longer or more explicit than Pip.
+
+
+Jane_Eyre_Charlotte_Bronte.txt
+"-------"
+There was no possibility of taking a walk that day. We had been wandering, indeed, in the leafless shrubbery an hour in the morning.
+
+
+Moby_Dick_Herman_Melville.txt
+"-------"
+Call me Ishmael. Some years ago—never mind how long precisely—having little or no money in my purse, and nothing particular to interest me on shore, I thought I would sail about a little and see the watery part of the world.
+
+
+Pride_and_Prejudice_Jane_Austen.txt
+"-------"
+It is a truth universally acknowledged, that a single man in possession of a good fortune, must be in want of a wife.
+
+
+The_Adventures_of_Sherlock_Holmes_Arthur_Conan_Doyle.txt
+"-------"
+To Sherlock Holmes she is always the woman. I have seldom heard him mention her under any other name.
+
+
+The_Picture_of_Dorian_Gray_Oscar_Wilde.txt
+"-------"
+The studio was filled with the rich odor of roses, and when the light summer wind stirred amidst the trees of the garden.
+
+
+The_Time_Machine_HG_Wells.txt
+"-------"
+The Time Traveller (for so it will be convenient to speak of him) was expounding a recondite matter to us.
+
+
